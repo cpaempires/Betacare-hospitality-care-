@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MTN Health – Talk to a Doctor from Your Phone (₦100)</title>
+  <meta name="description" content="Get quick, private health help from your phone. Use your MTN line, receive a code by SMS, and start — only ₦100." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root{
+      --bg1:#0b1226;
+      --bg2:#1a2250;
+      --accent:#06c167; /* trust green */
+      --accent2:#f4b400; /* warm highlight */
+      --text:#ffffff;
+      --muted:#c9d1d9;
+      --card:rgba(255,255,255,0.08);
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      background: radial-gradient(80% 120% at 20% 0%, var(--bg2) 0%, var(--bg1) 40%, #0a0f1f 100%);
+      min-height:100vh; display:flex; align-items:center; justify-content:center; padding:20px;
+    }
+    .wrap{width:100%; max-width:900px; display:grid; gap:20px; grid-template-columns:1fr; }
+    @media (min-width:900px){ .wrap{ grid-template-columns: 1.1fr .9fr; } }
+    .card{
+      background:var(--card);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:18px; padding:22px; box-shadow:var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .hero h1{font-size:28px; line-height:1.2; margin-bottom:10px; font-weight:800}
+    .sub{color:var(--muted); font-size:14px; margin-bottom:16px}
+    .badges{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px}
+    .badge{font-size:12px; padding:8px 10px; border-radius:999px; background:rgba(6,193,103,.12); border:1px solid rgba(6,193,103,.25)}
+    .steps{display:grid; gap:10px; margin:14px 0 18px}
+    .step{display:flex; gap:10px; align-items:flex-start; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.08); padding:10px 12px; border-radius:12px}
+    .step b{display:inline-block; width:22px; height:22px; border-radius:6px; background:var(--accent); color:#071b11; text-align:center; line-height:22px; font-size:12px; font-weight:800}
+    .cta{
+      display:flex; gap:10px; align-items:center; justify-content:center; margin-top:6px;
+    }
+    .btn{
+      appearance:none; border:none; cursor:pointer;
+      background: linear-gradient(135deg, var(--accent), #119f58);
+      color:#04160d; font-weight:800; letter-spacing:.3px;
+      border-radius:999px; padding:14px 18px; width:100%;
+      box-shadow: 0 10px 22px rgba(6,193,103,.35);
+      transition: transform .15s ease, box-shadow .15s ease;
+      font-size:16px;
+    }
+    .btn:hover{ transform: translateY(-2px); box-shadow: 0 12px 26px rgba(6,193,103,.45); }
+    .trust{display:grid; gap:10px; margin-top:14px}
+    .trust li{list-style:none; font-size:13px; color:var(--muted)}
+    .trust li::before{content:"✓"; color:var(--accent); margin-right:6px; font-weight:900}
+    .price{font-weight:900; color:var(--accent2)}
+    .mini{
+      margin-top:12px; font-size:12px; color:var(--muted)
+    }
+    .preview{
+      display:grid; gap:12px;
+    }
+    .mock{
+      height:220px; border-radius:14px; overflow:hidden; border:1px solid rgba(255,255,255,.08);
+      background:linear-gradient(120deg,rgba(255,255,255,.06),rgba(255,255,255,.02));
+      display:flex; align-items:center; justify-content:center; color:#aab; font-size:13px;
+    }
+    .kpis{display:grid; grid-template-columns:repeat(3,1fr); gap:10px}
+    .kpi{background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.08); padding:12px; border-radius:12px; text-align:center}
+    .kpi b{display:block; font-size:18px}
+    .footer{margin-top:10px; font-size:12px; color:var(--muted); text-align:center}
+    .footer a{color:#7ed9ff}
+  </style>
+
+  <!-- TikTok Pixel -->
+  <script>
+    !function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];
+      ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"];
+      ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat([].slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);
+      ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};
+      ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js";
+        ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};
+        var s=d.createElement("script");s.type="text/javascript";s.async=!0;s.src=r+"?sdkid="+e+"&lib="+t;
+        var x=d.getElementsByTagName("script")[0];x.parentNode.insertBefore(s,x)};
+      ttq.load('YOUR_PIXEL_ID');  /* TODO: set your Pixel ID */
+      ttq.page();
+    }(window,document,'ttq');
+  </script>
+</head>
+<body>
+  <main class="wrap">
+    <!-- LEFT: copy + CTA -->
+    <section class="card hero" aria-labelledby="title">
+      <h1 id="title">Talk to a Doctor from Your Phone — MTN Users (₦100)</h1>
+      <p class="sub">Fast, private health support. Use your MTN line: get a code by SMS, match it on the page, and start.</p>
+
+      <div class="badges">
+        <span class="badge">MTN Nigeria Compatible</span>
+        <span class="badge">Takes 60–90 Seconds</span>
+        <span class="badge">Secure & Private</span>
+      </div>
+
+      <div class="steps">
+        <div class="step"><b>1</b><span>Tap <strong>Start with MTN</strong></span></div>
+        <div class="step"><b>2</b><span>Enter your MTN number & receive an <strong>SMS code</strong></span></div>
+        <div class="step"><b>3</b><span>Match the code on screen to verify</span></div>
+        <div class="step"><b>4</b><span>Your account is created automatically (patient profile)</span></div>
+        <div class="step"><b>5</b><span>Book a free consultation or explore services</span></div>
+      </div>
+
+      <div class="cta">
+        <button id="subscribeBtn" class="btn" aria-label="Start with MTN">Start with MTN — <span class="price">₦100</span></button>
+      </div>
+
+      <ul class="trust">
+        <li>No hidden charges. Cancel anytime.</li>
+        <li>SMS login details sent to your MTN line.</li>
+        <li>Works on mobile in seconds.</li>
+      </ul>
+
+      <p class="mini">By continuing, you consent to anonymous analytics for service improvement. See our <a href="#" target="_blank" rel="noopener">Privacy Notice</a>.</p>
+    </section>
+
+    <!-- RIGHT: visual/metrics -->
+    <aside class="card preview" aria-label="Preview and metrics">
+      <div class="mock">Offer Preview / Placeholder Image</div>
+      <div class="kpis">
+        <div class="kpi"><b>₦100</b><span>Quick Start</span></div>
+        <div class="kpi"><b>~90s</b><span>Average Time</span></div>
+        <div class="kpi"><b>SMS</b><span>Secure Login</span></div>
+      </div>
+      <p class="footer">Need help? Chat with support • <a href="#" target="_blank" rel="noopener">Learn more</a></p>
+    </aside>
+  </main>
+
+  <script>
+    /*************************************************
+     * CONFIG
+     *************************************************/
+    // Base offer with macros (your affiliate network will resolve them)
+    const BASE_OFFER_URL =
+      "https://www.wineisblue.support/click?offer_id=YOUR_OFFER_ID&pub_id=278557&pub_click_id={click_id}&site={subid}&pub_sub_id={sub_subid}";
+
+    // Optional advanced matching (set from your own page/form if available)
+    const userEmail = "";      // e.g. captured email (will be hashed)
+    const userPhone = "";      // e.g. "23480XXXXXXXX" (will be hashed)
+    const userExternalId = ""; // your internal ID (will be hashed)
+
+    /*************************************************
+     * Helpers
+     *************************************************/
+    const qs = new URLSearchParams(location.search);
+    function getParam(name, def=""){ return qs.get(name) || def; }
+
+    // Build final offer URL by swapping macros with incoming params if present
+    function buildOfferUrl(){
+      const clickId = getParam("click_id", "");
+      const subid = getParam("subid", "");
+      const subsub = getParam("sub_subid", "");
+
+      let url = BASE_OFFER_URL;
+      if (clickId) url = url.replace("{click_id}", encodeURIComponent(clickId));
+      if (subid)   url = url.replace("{subid}", encodeURIComponent(subid));
+      if (subsub)  url = url.replace("{sub_subid}", encodeURIComponent(subsub));
+
+      // If any macro wasn't present in query, leave as-is (network may still handle)
+      return url;
+    }
+
+    async function sha256(str){
+      const enc = new TextEncoder().encode(String(str).trim().toLowerCase());
+      const buf = await crypto.subtle.digest('SHA-256', enc);
+      return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+    }
+
+    async function identifyPII(){
+      try{
+        const payload = {};
+        if (userEmail) payload.email = await sha256(userEmail);
+        if (userPhone) payload.phone_number = await sha256(userPhone);
+        if (userExternalId) payload.external_id = await sha256(userExternalId);
+        if (Object.keys(payload).length) ttq.identify(payload);
+      }catch(e){}
+    }
+
+    /*************************************************
+     * Pixel events
+     *************************************************/
+    // ViewContent on page load
+    ttq.track('ViewContent', {
+      contents: [{
+        content_id: "mtn_health_ng",
+        content_type: "product",
+        content_name: "MTN Health – Doctor from Phone"
+      }],
+      value: 100,
+      currency: "NGN"
+    });
+    identifyPII(); // optional advanced matching
+
+    // ClickButton on CTA
+    document.getElementById('subscribeBtn').addEventListener('click', function(){
+      ttq.track('ClickButton', {
+        contents: [{
+          content_id: "cta_start_mtn",
+          content_type: "product",
+          content_name: "Start with MTN — ₦100"
+        }],
+        value: 100,
+        currency: "NGN"
+      });
+
+      const offerUrl = buildOfferUrl();
+      window.open(offerUrl, '_blank', 'noopener,noreferrer');
+    });
+  </script>
+</body>
+</html>
